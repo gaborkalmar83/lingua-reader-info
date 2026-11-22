@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy - Bilingua Reader (Lingua Reader)</title>
-<meta name="description" content="Privacy policy for Bilingua Reader, formerly Lingua Reader: no developer server, translation can run on your device, sync uses your own Google Drive.">
+<title>Privacy Policy - Bilingua Reader</title>
+<meta name="description" content="Privacy policy for Bilingua Reader: no developer server, no ads, translation on your device by default, and exactly which optional services receive text when you use them.">
 <link rel="canonical" href="https://bilingua.kalmarium.com/privacy-policy.html">
 <meta name="theme-color" content="#1a6b4b">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta property="og:site_name" content="Bilingua Reader">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Privacy Policy - Bilingua Reader (Lingua Reader)">
-<meta property="og:description" content="Privacy policy for Bilingua Reader, formerly Lingua Reader: no developer server, translation can run on your device, sync uses your own Google Drive.">
+<meta property="og:title" content="Privacy Policy - Bilingua Reader">
+<meta property="og:description" content="Privacy policy for Bilingua Reader: no developer server, no ads, and exactly which optional services receive text.">
 <meta property="og:url" content="https://bilingua.kalmarium.com/privacy-policy.html">
 <meta property="og:image" content="https://bilingua.kalmarium.com/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Bilingua Reader showing a book with each sentence translated underneath">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Privacy Policy - Bilingua Reader (Lingua Reader)">
-<meta name="twitter:description" content="Privacy policy for Bilingua Reader, formerly Lingua Reader: no developer server, translation can run on your device, sync uses your own Google Drive.">
+<meta name="twitter:title" content="Privacy Policy - Bilingua Reader">
+<meta name="twitter:description" content="Privacy policy for Bilingua Reader: no developer server, no ads, and exactly which optional services receive text.">
 <meta name="twitter:image" content="https://bilingua.kalmarium.com/img/og-image.jpg">
 <link rel="stylesheet" href="/style.css">
 <script defer src="https://overwatch.kalmarium.com/h.js" data-app="lingua-reader"></script>
@@ -39,39 +39,300 @@
   </div>
 </header>
 <main id="main" class="wrap doc">
-<h1>Privacy Policy - Lingua Reader</h1>
-<p><em class="updated">Last updated: 2026-08-28</em></p>
-<p>Lingua Reader does not operate a server and does not collect, store, or transmit your personal data to its developer.</p>
+<h1>Privacy Policy - Bilingua Reader</h1>
+<p><em>Last updated: 2026-11-22. Covers Bilingua Reader for Android (package <code>com.lingua.reader</code>), version 5.11.</em></p>
+<p>Bilingua Reader is published by <strong>Kalmarium</strong>. Contact: <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a></p>
+<h2>The short version</h2>
+<ul>
+<li>There is no Bilingua Reader account and no server run by the developer. The developer does not receive your books, the text you read, your words, notes, reading statistics, API keys or sync data.</li>
+<li>By default, translation runs on your device and your reading text is not sent anywhere.</li>
+<li>Text leaves your device only when you use a feature that needs an online service. Each one is listed below, with what it receives. In those cases the text goes straight from your device to that service.</li>
+<li>No advertising. No analytics or tracking added by the developer. Some bundled third-party libraries can send their own technical diagnostics to their makers; see &quot;Advertising, analytics and diagnostics&quot;.</li>
+<li>The app is a one-off purchase through Google Play. Google handles the payment.</li>
+</ul>
+<h2>Data stored on your device</h2>
+<p>All of this stays in the app&#39;s private storage unless you turn on a sync or export it yourself:</p>
+<ul>
+<li>your books (EPUB, PDF, imported web pages and shared text) and their covers;</li>
+<li>reading positions, bookmarks, notes, saved words and sentences, practice history;</li>
+<li>the translation cache (translations already made, so they are not requested twice);</li>
+<li>reading statistics and per-provider usage figures (calls, characters or tokens, response times, last error);</li>
+<li>settings, including API keys, tokens and server passwords you enter. These secrets are encrypted with a key in the Android Keystore and are not included in settings backups or Drive sync;</li>
+<li>downloaded language packs and AI models;</li>
+<li>audio clips generated by your phone&#39;s text-to-speech engine for flashcards;</li>
+<li>the trial start date and a &quot;purchased&quot; flag (see &quot;Purchase and trial&quot;);</li>
+<li>an optional debug log. It is off by default and stays on the device unless you choose to share it. It can contain technical details such as the Google account address used for sync.</li>
+</ul>
+<p>If the app crashes, the error is shown on screen for you to copy. It is not sent anywhere.</p>
+<p><strong>Android backup.</strong> If Android backup is on for your device, Android may include the app&#39;s database and settings (not books, covers, models, the translation cache or the debug log) in your own Google backup. That backup is run by Android and Google, not by the developer.</p>
 <h2>Translation</h2>
-<p>Text you translate is processed either:</p>
+<p><strong>On your device (default).</strong> Google ML Kit language packs, the OPUS-MT models, and the optional on-device AI models translate without sending your text anywhere. Downloading a pack or model contacts Google (ML Kit) or Hugging Face (OPUS-MT, Qwen, Gemma and the other on-device models) to fetch the file. No reading text is part of that request.</p>
+<p><strong>Online providers (only if you select one).</strong> The sentences on the pages you read, plus the language pair, are sent directly from your device to the provider you chose. If you turn on background translation or whole-book translation for a book, the text of that whole book is sent.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>What is sent</th>
+<th>When</th>
+<th>Set up by you?</th>
+<th>Provider&#39;s privacy policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MyMemory (Translated)</td>
+<td>Sentences to translate, language pair</td>
+<td>When selected as the translation provider, or included in a provider comparison</td>
+<td>Selected by you; no key or account</td>
+<td>See mymemory.translated.net</td>
+</tr>
+<tr>
+<td>DeepL</td>
+<td>Sentences to translate, language pair, your API key</td>
+<td>When selected</td>
+<td>Yes, your own API key</td>
+<td><a href="https://www.deepl.com/privacy">https://www.deepl.com/privacy</a></td>
+</tr>
+<tr>
+<td>Azure AI Foundry (Microsoft)</td>
+<td>Sentences to translate, your custom instructions, your key; text for the AI features below</td>
+<td>When selected</td>
+<td>Yes, your own endpoint and key</td>
+<td><a href="https://privacy.microsoft.com/privacystatement">https://privacy.microsoft.com/privacystatement</a></td>
+</tr>
+<tr>
+<td>OpenRouter</td>
+<td>Same as Azure, plus the app&#39;s name</td>
+<td>When selected</td>
+<td>Yes, your own API key</td>
+<td><a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a></td>
+</tr>
+<tr>
+<td>Anthropic (Claude)</td>
+<td>Same as Azure. Whole-book batch translation sends the whole book and Anthropic holds the job until the results are collected (up to about a day)</td>
+<td>When selected. Experimental features must be on</td>
+<td>Yes, your own API key</td>
+<td><a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>Same as Azure</td>
+<td>When selected. Experimental features must be on</td>
+<td>Yes, your own API key</td>
+<td><a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></td>
+</tr>
+<tr>
+<td>Google Gemini</td>
+<td>Same as Azure</td>
+<td>When selected. Experimental features must be on</td>
+<td>Yes, your own API key</td>
+<td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
+</tr>
+<tr>
+<td>Custom server (LibreTranslate-compatible)</td>
+<td>Sentences to translate, language pair, optional key</td>
+<td>When selected</td>
+<td>Yes, the server address you enter</td>
+<td>Whoever runs that server</td>
+</tr>
+<tr>
+<td>Google Translate (web endpoint)</td>
+<td>Sentences to translate, language pair</td>
+<td>Only on installs that selected it in an earlier version. It can no longer be selected</td>
+<td>Selected by you in an earlier version</td>
+<td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
+</tr>
+</tbody></table></div>
+<p>When you enter an API key, the app may also ask that provider for its list of models, which sends the key.</p>
+<p>The &quot;Translate in Bilingua Reader&quot; pop-up (text you select or share from another app) uses the same provider. With an online provider it waits for you to tap before sending anything.</p>
+<h2>Word help, grammar and other AI features</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Service</th>
+<th>What is sent</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Explain a word (default method: dictionary lookup)</td>
+<td>Wiktionary (Wikimedia), dictionaryapi.dev for English, DuckDuckGo Instant Answers as a last resort</td>
+<td>The single word you tapped and its language</td>
+<td>When you tap Explain. No account or key</td>
+</tr>
+<tr>
+<td>Explain a word (AI method)</td>
+<td>The AI provider you configured, or the on-device model</td>
+<td>The word and the sentence around it. On-device: nothing is sent</td>
+<td>When you tap Explain, if you chose this method</td>
+</tr>
+<tr>
+<td>Explain grammar</td>
+<td>The AI provider you configured, or the on-device model, or LanguageTool&#39;s public service (api.languagetool.org)</td>
+<td>The sentence. On-device: nothing is sent</td>
+<td>When you ask for a grammar breakdown. LanguageTool is used if you choose &quot;Web&quot;, or automatically when no AI provider or on-device model is available</td>
+</tr>
+<tr>
+<td>Grammar rule reference (LinguaMap)</td>
+<td>GitHub (raw.githubusercontent.com)</td>
+<td>A request for a public rules file. No reading text</td>
+<td>When an online AI provider explains grammar for English, Dutch, German, Finnish or Hungarian</td>
+</tr>
+<tr>
+<td>Chat about the page</td>
+<td>The AI provider you configured, or the on-device model</td>
+<td>The text of the current page (up to about 3,500 characters) and your messages</td>
+<td>When you open the chat and send a message</td>
+</tr>
+<tr>
+<td>Check my sentence</td>
+<td>The AI provider you configured, or the on-device model</td>
+<td>The sentence you wrote</td>
+<td>When you ask for a check</td>
+</tr>
+<tr>
+<td>Ask in Claude / ChatGPT (experimental)</td>
+<td>The Claude or ChatGPT app installed on your phone</td>
+<td>The word, its sentence and its translation, handed over through Android&#39;s share function (or copied to the clipboard)</td>
+<td>When you tap that button</td>
+</tr>
+<tr>
+<td>Compare providers (benchmark)</td>
+<td>The providers you include</td>
+<td>Built-in sample sentences, not your books</td>
+<td>When you run it</td>
+</tr>
+</tbody></table></div>
+<p>Links: Wikimedia <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">https://foundation.wikimedia.org/wiki/Policy:Privacy_policy</a> - DuckDuckGo <a href="https://duckduckgo.com/privacy">https://duckduckgo.com/privacy</a> - LanguageTool <a href="https://languagetool.org/legal/privacy">https://languagetool.org/legal/privacy</a> - GitHub <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a> - Hugging Face <a href="https://huggingface.co/privacy">https://huggingface.co/privacy</a></p>
+<p><strong>Dictation and voice chat.</strong> If you tap the microphone (notes, sentence check, page chat), the app asks for microphone permission and uses Android&#39;s speech recognition. It prefers on-device recognition. If that is not available for the language, your phone&#39;s default speech service (on most phones, Google&#39;s) processes the audio online. The app does not record, store or send audio itself.</p>
+<p><strong>Read-aloud.</strong> Text is spoken by the text-to-speech engine installed on your phone. If you pick a voice that needs a network connection, that engine&#39;s provider receives the text.</p>
+<h2>Library features that use the network</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Service</th>
+<th>What is sent</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Missing covers</td>
+<td>Open Library (Internet Archive) and Google Books; also Hardcover if you connected it</td>
+<td>The book&#39;s title, author and ISBN</td>
+<td>Automatically for books without a cover. On by default; off switch in Settings - Appearance</td>
+</tr>
+<tr>
+<td>Search the web for a cover</td>
+<td>DuckDuckGo, in your browser</td>
+<td>Title and author</td>
+<td>When you tap it</td>
+</tr>
+<tr>
+<td>Import a web page</td>
+<td>The website you name</td>
+<td>A normal page request</td>
+<td>When you import a page</td>
+</tr>
+<tr>
+<td>OPDS catalogs</td>
+<td>The catalog you add (for example your own calibre server, or Project Gutenberg)</td>
+<td>Browsing and search requests, the login you entered for that catalog</td>
+<td>When you browse or download</td>
+</tr>
+<tr>
+<td>calibre sync</td>
+<td>Your calibre content server</td>
+<td>Login, reading positions, device name</td>
+<td>Only if you set it up</td>
+</tr>
+<tr>
+<td>Kobo sync</td>
+<td>Your Calibre-Web server</td>
+<td>The sync address you entered, reading positions and status; books are downloaded</td>
+<td>Only if you set it up</td>
+</tr>
+<tr>
+<td>KOReader sync</td>
+<td>The sync server you choose. The default is the community server sync.koreader.rocks, which is not run by the developer</td>
+<td>User name, a hash of your password, a fingerprint of each book file, your position, device name</td>
+<td>Only if you set it up</td>
+</tr>
+<tr>
+<td>Hardcover</td>
+<td>hardcover.app</td>
+<td>Your token, the books you open, reading status and page progress, under the visibility you choose</td>
+<td>Only if you set it up</td>
+</tr>
+<tr>
+<td>AnkiDroid</td>
+<td>The AnkiDroid app on your device</td>
+<td>Saved words, sentences and audio clips</td>
+<td>When you export. Nothing leaves the device</td>
+</tr>
+</tbody></table></div>
+<p>Connections to the hosted services named in this policy use HTTPS. Plain HTTP is possible only for servers you add yourself (calibre, OPDS, KOReader, a custom translation server), for example on your home network.</p>
+<h2>Google Drive sync (optional)</h2>
+<p>If you sign in with Google, the app asks for:</p>
 <ul>
-<li><strong>entirely on your device</strong> (the default, offline mode, using downloaded language packs - either Google's ML Kit models, or, for the on-device AI translation option, an open-source OPUS-MT model you download once from Hugging Face), or</li>
-<li>if you choose to configure one, <strong>sent directly from your device</strong> to a third-party translation provider (DeepL, Azure, OpenRouter, or a server you specify), using an API key you supply yourself.</li>
+<li><code>drive.appdata</code> - a private app folder in <strong>your own</strong> Google Drive that only Bilingua Reader can access and that does not show in your Drive file list;</li>
+<li>your Google account email address, used only on the device to show which account is connected.</li>
 </ul>
-<p>That provider's own privacy policy governs any data sent to it. The developer of Lingua Reader never sees or receives this data. Downloading an offline language pack or on-device AI model contacts Google's or Hugging Face's servers to fetch that file, but no text you're reading or translating is ever included in that request.</p>
-<h2>Sync (optional)</h2>
-<p>If you sign in with Google, your saved words, library metadata, cached translations, and reading position are stored in <strong>your own Google Drive account</strong>, in a private app-data area that only Lingua Reader can access and that does not appear in your normal Drive file list. This data is never sent to the developer or to any other party. Each category (library, saved words, cached translations, reading stats) can be turned off independently in Settings.</p>
-<h2>Anki export</h2>
-<p>Saving a word or sentence to Anki uses AnkiDroid's on-device integration (a local Android intent). No data leaves your device for this feature.</p>
+<p>Stored in that folder, according to the categories you leave on in Settings: library details and reading positions, the book files themselves and their covers, saved words, notes, cached translations, reading statistics, and settings (without API keys or passwords).</p>
+<p><strong>Notes in Google Docs (optional, separate switch).</strong> If you turn this on, the app additionally asks for <code>documents</code> and <code>drive.file</code> and writes your notes into Google Docs documents it creates in your Drive. <code>drive.file</code> limits the app&#39;s Drive access to files it created.</p>
+<p>None of this is sent to the developer.</p>
+<h2>Purchase and trial</h2>
+<p>The app has a 14-day free trial and a one-off in-app purchase through Google Play Billing. Google processes the payment under its own privacy policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). The app never sees your card or payment details. It receives the purchase record from Google Play on your device and checks it there; the app does not send it to the developer. Like every Play developer, Kalmarium can see order information (such as order number, country and price) in the Google Play Console.</p>
+<p>To keep the trial from restarting after a reinstall, the trial start date is stored on the device and in Google Play services &quot;Block Store&quot;, which can back it up with your Google account. It contains dates only, no identifier. To tie the purchased flag to your device, the app computes a hash from the device&#39;s app-specific Android ID and the app&#39;s signature. The hash stays on the device.</p>
+<h2>Advertising, analytics and diagnostics</h2>
+<p>Bilingua Reader contains no advertising and no advertising ID use. The developer has added no analytics, tracking or crash-reporting service and receives no usage data.</p>
+<p>Some third-party libraries inside the app can send their own technical diagnostics to their makers:</p>
+<ul>
+<li><strong>Google ML Kit, Google Play Billing and Google Play services.</strong> According to Google&#39;s documentation, these can send Google technical data such as device and app information, a per-installation identifier, performance figures and error codes. They do not send the text you read.</li>
+<li><strong>ONNX Runtime (Microsoft)</strong>, used for the OPUS-MT models. The library includes Microsoft&#39;s diagnostic telemetry component, which may send technical data about the device and the library&#39;s performance to Microsoft (<a href="https://privacy.microsoft.com/privacystatement">https://privacy.microsoft.com/privacystatement</a>). It does not receive the text you read from the app.</li>
+</ul>
 <h2>AI transparency (EU AI Act)</h2>
-<p>Lingua Reader offers two ways to look up a word or sentence:</p>
+<p>Bilingua Reader is a translation and language-learning aid. Under the EU AI Act (Regulation (EU) 2024/1689) this is a minimal or limited-risk use. It is not used for biometric identification or categorisation, emotion recognition, employment, credit, law enforcement, or any automated decision with a legal or similarly significant effect on a person, and it does no profiling of its users.</p>
+<p>Where AI is used:</p>
 <ul>
-<li>A <strong>dictionary and web lookup</strong> (Wiktionary, DuckDuckGo) - a direct reference lookup, not AI-generated.</li>
-<li>An optional <strong>AI-generated explanation</strong>, produced either fully <strong>on your device</strong> (a small open-source language model, downloaded once, that never sends anything over the network to generate an explanation) or by whichever hosted large language model provider you've connected yourself (OpenRouter or Azure OpenAI, using your own API key). Any explanation produced either way is clearly labeled as AI-generated in the app. The same is true of the optional <strong>"Explain grammar"</strong> feature (a color-coded breakdown of a sentence's grammar) - it runs on-device when you're offline or haven't set up a hosted provider, and, when online with one configured, may additionally reference rule descriptions fetched live from a companion open-source project (<a href="https://github.com/gaborkalmar83/Lucy">LinguaMap</a>) to ground its explanation; the sentence text itself is sent to whichever provider (on-device or hosted) generates the explanation, exactly as with word lookups.</li>
+<li><strong>Not AI-generated:</strong> dictionary lookups (Wiktionary, dictionaryapi.dev, DuckDuckGo) and LanguageTool&#39;s rule-based grammar check. Translation by ML Kit, OPUS-MT, DeepL, MyMemory or a custom server is machine translation of existing text, not open-ended generation.</li>
+<li><strong>Generated by a large language model</strong>, on your device (Qwen, Gemma or another model you download) or by a hosted provider you connected with your own key (OpenRouter, Azure AI Foundry, Anthropic Claude, OpenAI, Google Gemini):<ul>
+<li>translations, when one of those models is your translation provider, or when OPUS-MT&#39;s &quot;quality&quot; mode polishes sentences with the on-device model;</li>
+<li>AI word explanations;</li>
+<li>AI grammar breakdowns;</li>
+<li>the page chat;</li>
+<li>&quot;Check my sentence&quot;.</li>
 </ul>
-<p>Under the EU AI Act (Regulation (EU) 2024/1689), Lingua Reader is a minimal/limited-risk AI use case - a translation and language-learning aid. It is not used for biometric identification or categorisation, emotion recognition, employment, credit, law enforcement, or any automated decision with a legal or similarly significant effect on a person, and it performs no profiling of its users.</p>
-<p>Where the app uses generative AI (the optional AI-explain feature, whether run on-device or through a hosted provider), the resulting content is labeled as AI-generated in the interface, in line with the Act's transparency requirements for AI-generated content (Article 50). All other translation in the app is deterministic machine translation of existing text (on-device ML Kit or OPUS-MT, or DeepL/Azure/OpenRouter/your own server) rather than generated content, and is not subject to that labeling requirement.</p>
+</li>
+</ul>
+<p>How it is labelled in the app:</p>
+<ul>
+<li>In the reader, translations written by a language model show &quot;AI-generated translation&quot; in the top bar and on the page.</li>
+<li>AI word explanations, AI grammar breakdowns, the page chat and &quot;Check my sentence&quot; results show &quot;AI-generated&quot;.</li>
+<li>A LanguageTool grammar result is marked as coming from the web checker instead.</li>
+<li>The label is not repeated everywhere a translation is shown again: the &quot;Translate in Bilingua Reader&quot; pop-up, and translations you save or export (saved words, notes, Anki cards), show the text without it.</li>
+</ul>
+<p>AI output can be wrong. Machine translation is best effort and not a substitute for a human translation.</p>
 <p>This section is a good-faith transparency statement about how the app works, not legal advice.</p>
-<h2>Advertising and analytics</h2>
-<p>Lingua Reader contains no advertising and no analytics or tracking software of any kind.</p>
+<h2>International transfers</h2>
+<p>The services above are operated by companies in various countries, including the United States. When you choose to use one, your device sends the data directly to it, and that provider&#39;s terms and privacy policy apply, including for any transfer outside your country. The developer does not transfer your data anywhere, because the developer does not receive it.</p>
+<h2>Deleting your data</h2>
+<ul>
+<li><strong>On the device:</strong> delete individual books, words and notes in the app, or uninstall the app (or clear its storage in Android settings) to remove everything.</li>
+<li><strong>Google Drive:</strong> in Google Drive on the web, open Settings - Manage apps - Bilingua Reader - &quot;Delete hidden app data&quot;. Delete the notes documents like any other Drive file. Remove the app&#39;s access at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+<li><strong>Other services</strong> (translation and AI providers, Hardcover, KOReader sync, your own servers): delete data and API keys through that service.</li>
+<li><strong>Trial and purchase records</strong> are held by Google Play under your Google account.</li>
+</ul>
+<h2>Your rights</h2>
+<p>Under the GDPR and similar laws you have rights of access, correction, deletion, portability and objection. The developer holds no personal data about you from the app, so in practice you exercise these rights yourself: your data is on your device and in your own accounts, and you can export it (Settings - Backup, and the Notes and Saved screens) or delete it as described above. For data held by a third-party service, contact that service. If you email the developer, that email is used only to answer you. You can also complain to your local data protection authority.</p>
+<h2>Children</h2>
+<p>Bilingua Reader is not directed at children and the developer does not knowingly collect data from anyone, of any age.</p>
 <h2>Website visits</h2>
-<p>This website counts page views with a cookie-free script that stores nothing on your device and sends only the page address, the referring website and the country (derived from your network address, which is not kept). It is switched off if your browser sends Do Not Track.</p>
-<h2>Children's privacy</h2>
-<p>Lingua Reader is not directed at children and does not knowingly collect data from anyone, of any age - see above.</p>
+<p>Website visits: the website bilingua.kalmarium.com counts page views with a cookie-free script that stores nothing on your device and sends only the page address, the referring website and the country (derived from your network address, which is not kept). It is switched off if your browser sends Do Not Track.</p>
 <h2>Changes to this policy</h2>
-<p>If this policy changes, the update will be posted here with a new "last updated" date.</p>
+<p>If this policy changes, the update will be posted here with a new &quot;last updated&quot; date.</p>
 <h2>Contact</h2>
-<p>kalmariumservices@gmail.com</p>
+<p>Kalmarium - <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a></p>
 </main>
 <footer class="site">
   <div class="wrap">
