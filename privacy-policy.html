@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Bilingua Reader (Lingua Reader)</title>
+<meta name="description" content="Privacy policy for Bilingua Reader, formerly Lingua Reader: no developer server, translation can run on your device, sync uses your own Google Drive.">
+<link rel="canonical" href="https://bilingua.kalmarium.com/privacy-policy.html">
+<meta name="theme-color" content="#1a6b4b">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:site_name" content="Bilingua Reader">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy - Bilingua Reader (Lingua Reader)">
+<meta property="og:description" content="Privacy policy for Bilingua Reader, formerly Lingua Reader: no developer server, translation can run on your device, sync uses your own Google Drive.">
+<meta property="og:url" content="https://bilingua.kalmarium.com/privacy-policy.html">
+<meta property="og:image" content="https://bilingua.kalmarium.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bilingua Reader showing a book with each sentence translated underneath">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy - Bilingua Reader (Lingua Reader)">
+<meta name="twitter:description" content="Privacy policy for Bilingua Reader, formerly Lingua Reader: no developer server, translation can run on your device, sync uses your own Google Drive.">
+<meta name="twitter:image" content="https://bilingua.kalmarium.com/img/og-image.jpg">
+<link rel="stylesheet" href="/style.css">
+<script defer src="https://overwatch.kalmarium.com/h.js" data-app="lingua-reader"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/icon-192.png" width="40" height="40" alt="Bilingua Reader app icon">Bilingua Reader</a>
+    <nav aria-label="Main">
+      <a href="/#features">Features</a>
+      <a href="/#screens">Screenshots</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/privacy-policy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap doc">
+<h1>Privacy Policy - Lingua Reader</h1>
+<p><em class="updated">Last updated: 2026-08-28</em></p>
+<p>Lingua Reader does not operate a server and does not collect, store, or transmit your personal data to its developer.</p>
+<h2>Translation</h2>
+<p>Text you translate is processed either:</p>
+<ul>
+<li><strong>entirely on your device</strong> (the default, offline mode, using downloaded language packs - either Google's ML Kit models, or, for the on-device AI translation option, an open-source OPUS-MT model you download once from Hugging Face), or</li>
+<li>if you choose to configure one, <strong>sent directly from your device</strong> to a third-party translation provider (DeepL, Azure, OpenRouter, or a server you specify), using an API key you supply yourself.</li>
+</ul>
+<p>That provider's own privacy policy governs any data sent to it. The developer of Lingua Reader never sees or receives this data. Downloading an offline language pack or on-device AI model contacts Google's or Hugging Face's servers to fetch that file, but no text you're reading or translating is ever included in that request.</p>
+<h2>Sync (optional)</h2>
+<p>If you sign in with Google, your saved words, library metadata, cached translations, and reading position are stored in <strong>your own Google Drive account</strong>, in a private app-data area that only Lingua Reader can access and that does not appear in your normal Drive file list. This data is never sent to the developer or to any other party. Each category (library, saved words, cached translations, reading stats) can be turned off independently in Settings.</p>
+<h2>Anki export</h2>
+<p>Saving a word or sentence to Anki uses AnkiDroid's on-device integration (a local Android intent). No data leaves your device for this feature.</p>
+<h2>AI transparency (EU AI Act)</h2>
+<p>Lingua Reader offers two ways to look up a word or sentence:</p>
+<ul>
+<li>A <strong>dictionary and web lookup</strong> (Wiktionary, DuckDuckGo) - a direct reference lookup, not AI-generated.</li>
+<li>An optional <strong>AI-generated explanation</strong>, produced either fully <strong>on your device</strong> (a small open-source language model, downloaded once, that never sends anything over the network to generate an explanation) or by whichever hosted large language model provider you've connected yourself (OpenRouter or Azure OpenAI, using your own API key). Any explanation produced either way is clearly labeled as AI-generated in the app. The same is true of the optional <strong>"Explain grammar"</strong> feature (a color-coded breakdown of a sentence's grammar) - it runs on-device when you're offline or haven't set up a hosted provider, and, when online with one configured, may additionally reference rule descriptions fetched live from a companion open-source project (<a href="https://github.com/gaborkalmar83/Lucy">LinguaMap</a>) to ground its explanation; the sentence text itself is sent to whichever provider (on-device or hosted) generates the explanation, exactly as with word lookups.</li>
+</ul>
+<p>Under the EU AI Act (Regulation (EU) 2024/1689), Lingua Reader is a minimal/limited-risk AI use case - a translation and language-learning aid. It is not used for biometric identification or categorisation, emotion recognition, employment, credit, law enforcement, or any automated decision with a legal or similarly significant effect on a person, and it performs no profiling of its users.</p>
+<p>Where the app uses generative AI (the optional AI-explain feature, whether run on-device or through a hosted provider), the resulting content is labeled as AI-generated in the interface, in line with the Act's transparency requirements for AI-generated content (Article 50). All other translation in the app is deterministic machine translation of existing text (on-device ML Kit or OPUS-MT, or DeepL/Azure/OpenRouter/your own server) rather than generated content, and is not subject to that labeling requirement.</p>
+<p>This section is a good-faith transparency statement about how the app works, not legal advice.</p>
+<h2>Advertising and analytics</h2>
+<p>Lingua Reader contains no advertising and no analytics or tracking software of any kind.</p>
+<h2>Website visits</h2>
+<p>This website counts page views with a cookie-free script that stores nothing on your device and sends only the page address, the referring website and the country (derived from your network address, which is not kept). It is switched off if your browser sends Do Not Track.</p>
+<h2>Children's privacy</h2>
+<p>Lingua Reader is not directed at children and does not knowingly collect data from anyone, of any age - see above.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the update will be posted here with a new "last updated" date.</p>
+<h2>Contact</h2>
+<p>kalmariumservices@gmail.com</p>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h2>More from Kalmarium</h2>
+    <ul class="more">
+      <li><a href="https://knowdrop.kalmarium.com">Knowdrop - daily trivia quiz</a></li>
+      <li><a href="https://lingua.kalmarium.com">Lingua Pairs - translation memory game</a></li>
+      <li><a href="https://netcheck.kalmarium.com">Ultimate Network Troubleshooter - Wi-Fi and network analyzer</a></li>
+      <li><a href="https://prep4cert.kalmarium.com">Prep 4 Cert - certification exam practice</a></li>
+      <li><a href="https://tankageddon.kalmarium.com">Tankageddon - tank battle game</a></li>
+      <li><a href="https://crackafold.kalmarium.com">Crack A Fold - foldable phone crack prank</a></li>
+    </ul>
+    <p class="legal"><a href="/privacy-policy.html">Privacy policy</a> <a href="mailto:kalmariumservices@gmail.com">kalmariumservices@gmail.com</a> <a href="https://kalmarium.com">kalmarium.com</a></p>
+    <p>Bilingua Reader, formerly Lingua Reader, is made by Kalmarium. Google Play is a trademark of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
