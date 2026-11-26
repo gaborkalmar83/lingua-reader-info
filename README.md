@@ -18,7 +18,7 @@ Read EPUBs and PDFs with live sentence-by-sentence translation, look up or liste
 - **Cross-device sync** - optionally sign in with Google to sync your library, saved words, cached translations, and reading position across devices, all through your own private Google Drive storage. Each category can be turned off independently.
 - **Two starter books and a full in-app guide** are bundled in, so there's something to read from the first launch.
 
-No account required. No ads. No tracking.
+No account required. No ads. No analytics or tracking software of our own.
 
 ## Features & configuration
 
