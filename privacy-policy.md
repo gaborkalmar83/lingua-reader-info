@@ -1,6 +1,6 @@
 # Privacy Policy - Bilingua Reader
 
-_Last updated: 2026-11-22. Covers Bilingua Reader for Android (package `com.lingua.reader`), version 5.12._
+_Last updated: 2026-11-26. Covers Bilingua Reader for Android (package `com.lingua.reader`), version 5.12._
 
 Bilingua Reader is published by **Kalmarium**. Contact: kalmariumservices@gmail.com
 
@@ -9,7 +9,7 @@ Bilingua Reader is published by **Kalmarium**. Contact: kalmariumservices@gmail.
 - There is no Bilingua Reader account and no server run by the developer. The developer does not receive your books, the text you read, your words, notes, reading statistics, API keys or sync data.
 - By default, translation runs on your device and your reading text is not sent anywhere.
 - Text leaves your device only when you use a feature that needs an online service. Each one is listed below, with what it receives. In those cases the text goes straight from your device to that service.
-- No advertising. No analytics or tracking added by the developer. Some bundled third-party libraries can send their own technical diagnostics to their makers; see "Advertising, analytics and diagnostics".
+- No advertising. No analytics or tracking software of our own. Google libraries inside the app (ML Kit, Play services and Play Billing) send Google their own technical diagnostics; see "Advertising, analytics and diagnostics".
 - The app is a one-off purchase through Google Play. Google handles the payment.
 
 ## Data stored on your device
@@ -108,7 +108,7 @@ To keep the trial from restarting after a reinstall, the trial start date is sto
 
 ## Advertising, analytics and diagnostics
 
-Bilingua Reader contains no advertising and no advertising ID use. The developer has added no analytics, tracking or crash-reporting service and receives no usage data.
+Bilingua Reader contains no advertising and no advertising ID use. We run no analytics or tracking software of our own and no crash-reporting service, and the developer receives no usage data. The Google libraries named below send Google their own diagnostics (technical data and a per-installation identifier, for app functionality and analytics), as declared in the Play Data safety section.
 
 Some third-party libraries inside the app can send their own technical diagnostics to their makers:
 

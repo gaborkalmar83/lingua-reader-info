@@ -57,6 +57,7 @@ header.site nav a:hover { color: var(--green); text-decoration: underline; }
 .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; }
 .badge { display: inline-block; line-height: 0; border-radius: 10px; }
 .badge svg { display: block; height: 56px; width: auto; }
+.badge img { display: block; width: 200px; height: auto; }
 .price-note { margin: 0; font-size: 15px; color: var(--muted); }
 .price-note strong { color: var(--ink); }
 .pills { list-style: none; padding: 0; margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -126,3 +127,20 @@ footer.site h2 { font: 700 20px/1.3 var(--serif); color: var(--ink); margin: 0 0
 .doc th, .doc td { border: 1px solid var(--line); padding: 6px 9px; text-align: left; vertical-align: top; }
 .doc th { background: var(--surface-2); }
 .doc td { overflow-wrap: anywhere; }
+
+
+/* Guide pages */
+.guide { max-width: 760px; padding-bottom: 40px; }
+.guide h1 { font: 700 clamp(28px, 6vw, 40px)/1.2 var(--serif); margin: 12px 0 10px; }
+.guide h2 { font: 700 24px/1.3 var(--serif); margin: 34px 0 8px; }
+.guide h3 { font: 700 19px/1.3 var(--serif); margin: 22px 0 6px; }
+.guide ul, .guide ol { padding-left: 22px; }
+.guide li { margin: 6px 0; }
+.guide .crumbs { font-size: 15px; color: var(--muted); margin: 8px 0 0; }
+.guide figure { margin: 20px 0; }
+.guide figure img { border-radius: 14px; border: 1px solid var(--line); background: var(--surface); width: 100%; max-width: 260px; display: block; }
+.guide figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+.guide .pair { display: flex; gap: 18px; flex-wrap: wrap; }
+.guide .pair figure { margin: 14px 0; }
+.guide .cta { margin: 28px 0 8px; }
+.byline { font-size: 14px; color: var(--muted); }
